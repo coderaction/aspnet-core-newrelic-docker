@@ -7,8 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "Web/1.0.0": {
+        "dependencies": {
+          "NewRelic.Agent": "10.4.0",
+          "NewRelic.Agent.Api": "10.4.0",
+          "NewRelic.RestApi": "1.2.0"
+        },
         "runtime": {
           "Web.dll": {}
+        }
+      },
+      "NewRelic.Agent/10.4.0": {},
+      "NewRelic.Agent.Api/10.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/NewRelic.Api.Agent.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.4.0.0"
+          }
+        }
+      },
+      "NewRelic.RestApi/1.2.0": {
+        "runtime": {
+          "lib/portable-net45+wp8+win8/NewRelic.RestClient.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
         }
       }
     }
@@ -18,6 +40,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "NewRelic.Agent/10.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0g9zrJV+2Nl3fif5cwykYD4h8H01pD/ThISNBUHyx1BwW2TbPDWXQ2gqqB56rPwnjYwwL4cRTAZ3Rn/Zpju0RQ==",
+      "path": "newrelic.agent/10.4.0",
+      "hashPath": "newrelic.agent.10.4.0.nupkg.sha512"
+    },
+    "NewRelic.Agent.Api/10.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zuwwpL2vtv24MeVi2jhK9szGoBQn+pDtwYy7WckbW16i+q/5va4bx1DgQwVxTgKAKlK3UWjXv6MkzeZanAZCSQ==",
+      "path": "newrelic.agent.api/10.4.0",
+      "hashPath": "newrelic.agent.api.10.4.0.nupkg.sha512"
+    },
+    "NewRelic.RestApi/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KZ/qgHF30yQ/N0YCQ9l70lmdRDd/BQ1cWHzBM8Mqc2Wsm6SLnqqPzm03GvCTF+4OfHLNPYrz+xJ6MlVEOUSkwQ==",
+      "path": "newrelic.restapi/1.2.0",
+      "hashPath": "newrelic.restapi.1.2.0.nupkg.sha512"
     }
   }
 }

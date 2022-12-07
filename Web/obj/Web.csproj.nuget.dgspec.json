@@ -39,6 +39,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "NewRelic.Agent": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "NewRelic.Agent.Api": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "NewRelic.RestApi": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

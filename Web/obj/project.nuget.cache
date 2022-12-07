@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "OP+WUZl8Q30OlPc3Dywx18vNWw/8L1eqSw8LALpw7FAYGU9ebOYpcfn0s9fl7imRXoccg1My9P1QvA2BFjSxgA==",
+  "dgSpecHash": "gkHusE1nugINkAY9tCOfMF26YBEpS9+v7LhdIqIfM1z+DD7GXqlaDXBCljM/78mapetYQpAuaITVX6DpUs1Npw==",
   "success": true,
   "projectFilePath": "C:\\git\\my-github\\aspnet-core-newrelic-docker\\Web\\Web.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\serka\\.nuget\\packages\\newrelic.agent\\10.4.0\\newrelic.agent.10.4.0.nupkg.sha512",
+    "C:\\Users\\serka\\.nuget\\packages\\newrelic.agent.api\\10.4.0\\newrelic.agent.api.10.4.0.nupkg.sha512",
+    "C:\\Users\\serka\\.nuget\\packages\\newrelic.restapi\\1.2.0\\newrelic.restapi.1.2.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NewRelic.RestApi 1.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NewRelic.RestApi",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

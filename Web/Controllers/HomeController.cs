@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Web.Models;
@@ -14,8 +15,20 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    
     public IActionResult Index()
     {
+        var quotes = new Dictionary<string, object>
+        {
+            {"1", "They had a large chunk of the garbage file? How much do they know?"},
+            {"2", "I'll hack the Gibson."},
+            {"3", "Zero Cool? Crashed fifteen hundred and seven systems in one day?"},
+            {"4", "Turn on your laptop. Set it to receive a file."},
+            {"5", "Listen you guys, help yourself to anything in the fridge. Cereal has."}
+        };
+
+        NewRelic.Api.Agent.NewRelic.RecordCustomEvent("serkaneren",quotes);
+        
         return View();
     }
 
